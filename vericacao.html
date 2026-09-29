@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de idade</title>
+</head>
+<body>
+
+    <h1>Verificação de idade</h1>
+
+    <script>
+        let anoAtual = 2026;
+
+        let anosNascimento = [
+            1985,
+            1992,
+            2001,
+            2007,
+            2012,
+            2018
+        ];
+
+        for (let usuario = 0; usuario < 6; usuario++) {
+
+            let anoNascimento = anosNascimento[usuario];
+
+            let idade = anoAtual - anoNascimento;
+
+            document.write(
+                "Usuário " + (usuario + 1) +
+                " nasceu em " + anoNascimento +
+                " e tem " + idade + " anos. "
+            );
+
+            if (idade >= 18) {
+                document.write("É MAIOR de idade.<br>");
+            } else {
+                document.write("É MENOR de idade.<br>");
+            }
+        }
+    </script>
+
+</body>
+</html>
