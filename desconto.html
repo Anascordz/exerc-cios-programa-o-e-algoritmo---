@@ -1,0 +1,18 @@
+<script>
+    var compra = parseFloat(prompt("Entre com o valor da compra:"));
+    var desconto;
+    var total;
+    if (compra >1000){
+        desconto = compra * 0.10;
+        total = compra - desconto;
+        document.write("Valor da compra: R$ " + compra + "<br><br>");
+        document.write("Desconto de 10%: R$ " + desconto + "<br><br>");
+        document.write("Valor final: R$ " + total);
+    } else {
+        desconto = compra * 0.05;
+        total = compra - desconto;
+        document.write("Valor da compra: R$ " + compra + "<br><br>");
+        document.write("Desconto de 5%: R$ " + desconto + "<br><br>");
+        document.write("Valor final: R$ " + total);
+    }
+</script>
