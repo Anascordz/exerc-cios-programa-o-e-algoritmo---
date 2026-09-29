@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anos Bissextos</title>
+</head>
+<body>
+
+<script>
+
+let ai;
+let af;
+let i;
+let cont = 0;
+
+ai = Number(prompt("Digite o ano inicial:"));
+af = Number(prompt("Digite o ano final:"));
+
+i = ai;
+
+while (i <= af) {
+
+    if (i % 4 == 0) {
+        cont = cont + 1;
+    }
+
+    i = i + 1;
+
+}
+
+document.write("Quantidade de anos bissextos: " + cont);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potência</title>
+</head>
+<body>
+
+<script>
+
+let base;
+let expoente;
+let resultado = 1;
+let i = 1;
+
+base = Number(prompt("Digite a base:"));
+expoente = Number(prompt("Digite o expoente:"));
+
+while (i <= expoente) {
+
+    resultado = resultado * base;
+    i = i + 1;
+
+}
+
+document.write("O resultado da potencia eh: " + resultado);
+
+</script>
+
+</body>
+</html>
